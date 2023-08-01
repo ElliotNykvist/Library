@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(236, 236, 236);
+  color: var(--black);
+  font-family: 'Poppins', sans-serif;
+}
+
+.header {
+  display: flex;
+  color: black;
+  background-color: rgb(255, 255, 255);
+  justify-content: space-between;
+  padding: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
+
+}
+
+.login {
+  border: none;
+  background-color: rgb(236, 236, 236);
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.add-book {
+  border-radius: 8px;
+  border: none;
+  font-size: 25px;
+  font-weight: 600;
+  padding: 20px;
+  background-color: rgb(236, 236, 236);
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+
+}
+
+button:hover {
+  filter: brightness(90%);
+}
+
+.books {
+  display: flex;
+  border: 2px black;
+  background-color: aquamarine;
+  padding: 20px;
+  justify-content: center;
+  border-radius: 8px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+}
+
+.books.active {
+transform: translate(-50%, -50%) scale(1);
+opacity: 1;
+}
+
+
+
+.input {
+  height: 30px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid black;
+
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h3 {
+  display: flex;
+  justify-content: center;
+}
+
+.submit {
+  height: 30px;
+  width: 200px;
+  border-radius: 4px;
+  border: 1px solid black;
+  margin-top: 10px;
+  background-color: rgb(71, 255, 71);
+
+}
+
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+
