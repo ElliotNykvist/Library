@@ -15,8 +15,7 @@ body {
   padding-left: 100px;
   padding-right: 100px;
   align-items: center;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;;
-
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .login {
@@ -41,47 +40,49 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 40px;
-
 }
 
 button:hover {
   filter: brightness(90%);
 }
 
-.books {
+.form {
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  border: 2px black;
-  background-color: aquamarine;
-  padding: 20px;
-  justify-content: center;
-  border-radius: 8px;
-  width: 250px;
   justify-content: center;
   align-items: center;
-  transform: translate(-50%, -50%) scale(0);
-  transition: 0.2s ease-in-out;
+  z-index: 1; /* Ensure the form is above other elements */
   opacity: 0;
+  visibility: hidden;
 }
 
-.books.active {
-transform: translate(-50%, -50%) scale(1);
-opacity: 1;
+.form.active {
+  opacity: 1;
+  visibility: visible;
 }
 
+.form-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+}
 
+.close-modal {
+  font-size: 0;
+  cursor: pointer;
+}
 
 .input {
   height: 30px;
   width: 200px;
   border-radius: 4px;
   border: 1px solid black;
-
-}
-
-form {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
 }
 
 h3 {
@@ -96,13 +97,21 @@ h3 {
   border: 1px solid black;
   margin-top: 10px;
   background-color: rgb(71, 255, 71);
-
 }
 
+.books {
+  background-color: rgb(236, 236, 236);
+  display: flex;
+  border: 2px black;
+  padding: 20px;
+  border-radius: 8px;
+  width: 250px;
+  justify-content: center;
+  align-items: center;
+}
 
-.form {
+form {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
-
-
