@@ -120,3 +120,43 @@ form {
   justify-content: center;
   flex-direction: column;
 }
+
+.book-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f9f9f9;
+  width: 250px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(250px - 20px);
+}
+
+.book-card h3 {
+  margin-top: 0;
+  font-size: 24px;
+  color: black;
+}
+
+.book-card p {
+  margin: 5px 0;
+}
+
+.book-card button {
+  border: none;
+  background-color: #ff5959;
+  color: white;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.book-card button:hover {
+  background-color: #e53c3c;
+}
+
+.book-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
