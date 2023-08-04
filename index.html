@@ -20,13 +20,13 @@
     <div class="form">
       <div class="books">
         <span class="close-modal">&times;</span>
-        <form action="#" method="">
+        <form method="post" name="Form">
           <h3>Add new book</h3>
-          <input class="input" type="text" name="title" id="title" placeholder="Title" maxlength="100">
+          <input class="input" type="text" name="title" id="title" placeholder="Title" maxlength="100" required/>
           <br>
-          <input class="input" type="text" name="author" id="author" placeholder="Author" maxlength="100">
+          <input class="input" type="text" name="author" id="author" placeholder="Author" maxlength="100" required/>
           <br>
-          <input class="input" type="number" name="pages" id="pages" placeholder="Pages" max="3000">
+          <input class="input" type="number" name="pages" id="pages" placeholder="Pages" max="3000"required/>
           <br>
           <label for="read">Have you read it?
             <input type="checkbox" name="read" id="read">
